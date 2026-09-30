@@ -1,0 +1,37 @@
+{
+  "source_path": "runs/battery/battery100_share0_correction.json",
+  "sha256": "128c3e4d268cfb1dba1ea753b247be449834d26ac96784b2ef5c7a4b2c3bd0c2",
+  "numeric_fields": 58,
+  "max_error": 5.551115123125783e-16,
+  "claude_summary": {
+    "L2_exact_count_le_0.001": 25,
+    "max_abs_change_learners": 7.632783294297951e-17,
+    "changes_bgpt": {
+      "bench__aitdcc_b_c_source": [
+        -0.021048,
+        0.000171
+      ],
+      "bench__kolmogorov_text": [
+        0.850822,
+        0.871065
+      ],
+      "bench__llm_compression_arxiv_math": [
+        0.057016,
+        0.077066
+      ],
+      "bench__llm_compression_python": [
+        -0.012226,
+        0.00452
+      ],
+      "new__go_source": [
+        -0.005895,
+        3.6e-05
+      ],
+      "new__python_docs_html": [
+        -0.003411,
+        0.000434
+      ]
+    }
+  },
+  "original_output_preserved": true
+}

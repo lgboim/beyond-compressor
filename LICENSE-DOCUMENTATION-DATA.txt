@@ -1,0 +1,16 @@
+Creative Commons Attribution 4.0 International
+
+Copyright (c) 2026 Ariel Elboim
+
+Except for the exclusions stated in LICENSE-SCOPE.md, the manuscript,
+supplement, revision notes, documentation, pre-registrations, verdict
+reports, saved evaluator inputs, manifests and figures covered by this
+notice are licensed under the Creative Commons Attribution 4.0
+International License.
+
+License summary: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution should identify Ariel Elboim, the title of the paper, the
+version, and the persistent identifier (https://doi.org/10.5281/zenodo.22338453
+for the paper, https://doi.org/10.5281/zenodo.22338797 for the code and results).

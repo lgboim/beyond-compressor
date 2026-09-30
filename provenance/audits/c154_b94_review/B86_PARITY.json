@@ -1,0 +1,210 @@
+{
+  "aitdcc_a_protein": {
+    "full_seed_count": 10,
+    "full_K_G": -0.0067773298311947505,
+    "B86_G": -0.006777329831194834,
+    "full_K_max_row_error": 1.9539925233402755e-14,
+    "G8_minus_B86_G": -1.0581490143254935e-05,
+    "original_gate_evaluated": false
+  },
+  "aitdcc_b_c_source": {
+    "full_seed_count": 8,
+    "full_K_G": 0.08418250622503146,
+    "B86_G": 0.08418250622503143,
+    "full_K_max_row_error": 1.687538997430238e-14,
+    "G8_minus_B86_G": 2.7755575615628914e-17,
+    "original_gate_evaluated": true
+  },
+  "aitdcc_d_glibc_rand": {
+    "full_seed_count": 8,
+    "full_K_G": 0.005319441856930271,
+    "B86_G": 0.005319441856929785,
+    "full_K_max_row_error": 3.730349362740526e-14,
+    "G8_minus_B86_G": 4.85722573273506e-16,
+    "original_gate_evaluated": true
+  },
+  "aitdcc_e_atlas_float32": {
+    "full_seed_count": 8,
+    "full_K_G": 0.025820547563034875,
+    "B86_G": 0.025820547563035312,
+    "full_K_max_row_error": 3.4638958368304884e-14,
+    "G8_minus_B86_G": -4.371503159461554e-16,
+    "original_gate_evaluated": true
+  },
+  "aitdcc_g_astronomy": {
+    "full_seed_count": 9,
+    "full_K_G": 0.012969214819324004,
+    "B86_G": 0.012969214819325003,
+    "full_K_max_row_error": 1.3322676295501878e-14,
+    "G8_minus_B86_G": 3.286932397972807e-05,
+    "original_gate_evaluated": false
+  },
+  "arithmetic": {
+    "full_seed_count": 8,
+    "full_K_G": 0.001805597602741323,
+    "B86_G": 0.0018055976027413212,
+    "full_K_max_row_error": 2.2898349882893854e-16,
+    "G8_minus_B86_G": 1.734723475976807e-18,
+    "original_gate_evaluated": true
+  },
+  "audio_16bit": {
+    "full_seed_count": 8,
+    "full_K_G": 0.005025457082453029,
+    "B86_G": 0.005025457082451723,
+    "full_K_max_row_error": 3.108624468950438e-14,
+    "G8_minus_B86_G": 1.3062467774105357e-15,
+    "original_gate_evaluated": true
+  },
+  "audio_8bit": {
+    "full_seed_count": 8,
+    "full_K_G": 0.032733045058206574,
+    "B86_G": 0.0327330450582064,
+    "full_K_max_row_error": 1.0658141036401503e-14,
+    "G8_minus_B86_G": 1.734723475976807e-16,
+    "original_gate_evaluated": true
+  },
+  "cifar10_rgb_hwc": {
+    "full_seed_count": 8,
+    "full_K_G": 0.19649613065843952,
+    "B86_G": 0.19649613065843852,
+    "full_K_max_row_error": 2.6645352591003757e-14,
+    "G8_minus_B86_G": 9.992007221626409e-16,
+    "original_gate_evaluated": true
+  },
+  "cifar10_rgb_planar": {
+    "full_seed_count": 8,
+    "full_K_G": 0.06533631867342904,
+    "B86_G": 0.06533631867342926,
+    "full_K_max_row_error": 3.375077994860476e-14,
+    "G8_minus_B86_G": -2.220446049250313e-16,
+    "original_gate_evaluated": true
+  },
+  "dclm": {
+    "full_seed_count": 8,
+    "full_K_G": 0.017398848302152693,
+    "B86_G": 0.01739884830215299,
+    "full_K_max_row_error": 1.9095836023552692e-14,
+    "G8_minus_B86_G": -2.983724378680108e-16,
+    "original_gate_evaluated": true
+  },
+  "dclm_ranked": {
+    "full_seed_count": 8,
+    "full_K_G": 0.07912799614181275,
+    "B86_G": 0.0791279961418132,
+    "full_K_max_row_error": 1.687538997430238e-14,
+    "G8_minus_B86_G": -4.579669976578771e-16,
+    "original_gate_evaluated": true
+  },
+  "dna": {
+    "full_seed_count": 9,
+    "full_K_G": 0.024019128747645634,
+    "B86_G": 0.02401912874764589,
+    "full_K_max_row_error": 1.1102230246251565e-14,
+    "G8_minus_B86_G": -0.0022247107690367765,
+    "original_gate_evaluated": false
+  },
+  "esc50_pcm8": {
+    "full_seed_count": 8,
+    "full_K_G": 0.011048513195974333,
+    "B86_G": 0.01104851319597433,
+    "full_K_max_row_error": 1.865174681370263e-14,
+    "G8_minus_B86_G": 3.469446951953614e-18,
+    "original_gate_evaluated": true
+  },
+  "esc50_pcm8_11khz": {
+    "full_seed_count": 8,
+    "full_K_G": 0.030395781613084163,
+    "B86_G": 0.030395781613084427,
+    "full_K_max_row_error": 3.197442310920451e-14,
+    "G8_minus_B86_G": -2.636779683484747e-16,
+    "original_gate_evaluated": true
+  },
+  "kolmogorov_dna": {
+    "full_seed_count": 9,
+    "full_K_G": 0.025311648714214076,
+    "B86_G": 0.02531164871421443,
+    "full_K_max_row_error": 9.769962616701378e-15,
+    "G8_minus_B86_G": -0.002748102155264217,
+    "original_gate_evaluated": false
+  },
+  "kolmogorov_text": {
+    "full_seed_count": 8,
+    "full_K_G": 0.052915525033354935,
+    "B86_G": 0.052915525033354616,
+    "full_K_max_row_error": 2.5757174171303632e-14,
+    "G8_minus_B86_G": 3.191891195797325e-16,
+    "original_gate_evaluated": true
+  },
+  "llm_compression_arxiv_math": {
+    "full_seed_count": 8,
+    "full_K_G": 0.06136194781920727,
+    "B86_G": 0.0613619478192069,
+    "full_K_max_row_error": 1.4654943925052066e-14,
+    "G8_minus_B86_G": 3.7470027081099033e-16,
+    "original_gate_evaluated": true
+  },
+  "llm_compression_cc": {
+    "full_seed_count": 8,
+    "full_K_G": 0.020049830907649807,
+    "B86_G": 0.020049830907649113,
+    "full_K_max_row_error": 2.1316282072803006e-14,
+    "G8_minus_B86_G": 6.938893903907228e-16,
+    "original_gate_evaluated": true
+  },
+  "llm_compression_python": {
+    "full_seed_count": 8,
+    "full_K_G": 0.06851457643423706,
+    "B86_G": 0.06851457643423675,
+    "full_K_max_row_error": 1.5987211554602254e-14,
+    "G8_minus_B86_G": 3.0531133177191805e-16,
+    "original_gate_evaluated": true
+  },
+  "metamath": {
+    "full_seed_count": 8,
+    "full_K_G": 0.24931651692849632,
+    "B86_G": 0.24931651692849677,
+    "full_K_max_row_error": 1.509903313490213e-14,
+    "G8_minus_B86_G": -4.440892098500626e-16,
+    "original_gate_evaluated": true
+  },
+  "musicnet_pcm8": {
+    "full_seed_count": 8,
+    "full_K_G": 0.03656796097746537,
+    "B86_G": 0.0365679609774654,
+    "full_K_max_row_error": 1.2434497875801753e-14,
+    "G8_minus_B86_G": -2.7755575615628914e-17,
+    "original_gate_evaluated": true
+  },
+  "musicnet_pcm8_11khz": {
+    "full_seed_count": 8,
+    "full_K_G": 0.00969824299664835,
+    "B86_G": 0.009698242996648787,
+    "full_K_max_row_error": 2.220446049250313e-14,
+    "G8_minus_B86_G": -4.371503159461554e-16,
+    "original_gate_evaluated": true
+  },
+  "mutopia_melody_16th": {
+    "full_seed_count": 8,
+    "full_K_G": 0.14297079834947254,
+    "B86_G": 0.14297079834947324,
+    "full_K_max_row_error": 7.993605777301127e-15,
+    "G8_minus_B86_G": -6.938893903907228e-16,
+    "original_gate_evaluated": true
+  },
+  "speech_commands_pcm8": {
+    "full_seed_count": 8,
+    "full_K_G": 0.016265333898506734,
+    "B86_G": 0.016265333898506595,
+    "full_K_max_row_error": 1.7763568394002505e-14,
+    "G8_minus_B86_G": 1.3877787807814457e-16,
+    "original_gate_evaluated": true
+  },
+  "speech_commands_pcm8_8khz": {
+    "full_seed_count": 8,
+    "full_K_G": 0.031076277734352276,
+    "B86_G": 0.031076277734352065,
+    "full_K_max_row_error": 2.220446049250313e-14,
+    "G8_minus_B86_G": 2.1163626406917047e-16,
+    "original_gate_evaluated": true
+  }
+}

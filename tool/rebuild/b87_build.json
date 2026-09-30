@@ -1,0 +1,81 @@
+[
+ {
+  "source": "hewiki",
+  "file": "20231101.he/train-00000-of-00004.parquet",
+  "sha256": "da59979fa61daebe79138f074a17efc3c5d50171bdd118fc7b7bdbe03e19cf26",
+  "n_docs": 83469,
+  "stream_bytes": 8388608,
+  "step": 32880,
+  "rows_sha256": "3e3425341b457dd646c4e49ce93ea37287072b266ae66b9c6f4310bb74787a85"
+ },
+ {
+  "source": "dewiki",
+  "file": "20231101.de/train-00000-of-00020.parquet",
+  "sha256": "8778fa2f0907e4eb65917b27092a911a400f9f2ee2eea4271423b706c29249a6",
+  "n_docs": 142266,
+  "stream_bytes": 8388608,
+  "step": 32880,
+  "rows_sha256": "de455b7d786f091d585a44cd543b457eaba280421c8de335841feaa75f06c0ac"
+ },
+ {
+  "source": "go_source",
+  "url": "go1.22.5.src.tar.gz",
+  "sha256": "ac9c723f224969aee624bc34fd34c9e13f2a212d75c71c807de644bb46e112f6",
+  "n_docs": 6505,
+  "stream_bytes": 8388608,
+  "step": 32880,
+  "rows_sha256": "12dc43e4f995635e39a5064b9ad252a7d719924985f0d4ddb51dcd9f28fb4b3f"
+ },
+ {
+  "source": "fashion_mnist",
+  "url": "train-images-idx3-ubyte.gz",
+  "sha256": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84",
+  "n_docs": 60000,
+  "stream_bytes": 8388608,
+  "step": 32880,
+  "rows_sha256": "17909c07b5ca700e4d8f6ae2fd2144019d47efa39dc2cb85a1a3b6935360a502"
+ },
+ {
+  "source": "elf_x86_64",
+  "n_files": 892,
+  "sha256_concat": "d9e95a40ba09605914186dedf44c10b5bf3735c2422fff00371612e4f7737b33",
+  "n_docs": 892,
+  "stream_bytes": 8388608,
+  "step": 32880,
+  "rows_sha256": "e89075710a670b3673c1203c63fcebe170e60dcf2c8bb95929165c73a231479e"
+ },
+ {
+  "source": "uci_adult",
+  "url": "adult.data",
+  "sha256": "5b00264637dbfec36bdeaab5676b0b309ff9eb788d63554ca0a249491c86603d",
+  "n_docs": 32561,
+  "stream_bytes": 3974304,
+  "step": 15569,
+  "rows_sha256": "a457e555bdfb0a8af934551b3915beef31375822194d5aa81180d307bda6705b"
+ },
+ {
+  "source": "yesno_pcm16",
+  "url": "waves_yesno.tar.gz",
+  "sha256": "c3f49e0cca421f96b75b41640749167b52118f232498667ca7a5f9416aef8e73",
+  "formats": [
+   [
+    2,
+    1,
+    8000
+   ]
+  ],
+  "n_docs": 60,
+  "stream_bytes": 5882720,
+  "step": 23053,
+  "rows_sha256": "f7c578428a7c501f26377c4781ba58e3a92a4e6390d56152371a97f70f4656c4"
+ },
+ {
+  "source": "python_docs_html",
+  "url": "python-3.12-docs-html.zip",
+  "sha256": "153c463113430ab6f450f46af19eef18347b81d4c35aa75aea9a0b3435be101e",
+  "n_docs": 535,
+  "stream_bytes": 8388608,
+  "step": 32880,
+  "rows_sha256": "9c1141c30f0776deac2362c99c8b6693465fdc5e3a42b2b09c0d9cb8fe4d82e0"
+ }
+]

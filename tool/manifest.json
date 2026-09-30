@@ -1,0 +1,817 @@
+{
+ "format": "beyond-compressor release v0 (draft, not published)",
+ "window_bytes": 4095,
+ "prefix": "each window is scored after the one-byte prefix 'O' (0x4F)",
+ "log_loss_bits": "nominal per-byte log loss of the observed byte, sum over its 8 bit predictions of -log2 p, from the compressor's main predictor; NaN on non-retained windows",
+ "retained": "the main-predictor byte sequence equals the raw window in length, values and order",
+ "references": {
+  "paq8px_standard": {
+   "bench__aitdcc_a_protein": {
+    "file": "data/paq8px_standard/bench__aitdcc_a_protein.npz",
+    "sha256": "82d936cb167535f513f687d3e09b73ae7a119bdcc0939beb39555448c5f9d37c",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__aitdcc_b_c_source": {
+    "file": "data/paq8px_standard/bench__aitdcc_b_c_source.npz",
+    "sha256": "cd9c0986b5f63f9e7114c0c152231265dd8e854c2dad64685f0ad9d21dff0562",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__aitdcc_d_glibc_rand": {
+    "file": "data/paq8px_standard/bench__aitdcc_d_glibc_rand.npz",
+    "sha256": "ec105f777fec70d61d71087ff14f58974c2930438ffeac44a587a3318a66bfce",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__aitdcc_e_atlas_float32": {
+    "file": "data/paq8px_standard/bench__aitdcc_e_atlas_float32.npz",
+    "sha256": "73f0d3eea5e72e06fb7182541f7d113f5e7cc54baeff43b60fa935244f1ca84d",
+    "rows": 247,
+    "retained": 247,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__aitdcc_g_astronomy": {
+    "file": "data/paq8px_standard/bench__aitdcc_g_astronomy.npz",
+    "sha256": "0c28b818b58eee5040d02fb65b5233322aaf13237dc45e303d609bf7781a51ed",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__arithmetic": {
+    "file": "data/paq8px_standard/bench__arithmetic.npz",
+    "sha256": "5e08118cd2612010373989d478eb3f52fdae0cf41d6713beb5495f9f7f3276a5",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__audio_16bit": {
+    "file": "data/paq8px_standard/bench__audio_16bit.npz",
+    "sha256": "9a53dd105f59465505e9449310c9c5f2abb8cbfa2a36f70e9ef112b1933a8dd4",
+    "rows": 244,
+    "retained": 244,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__audio_8bit": {
+    "file": "data/paq8px_standard/bench__audio_8bit.npz",
+    "sha256": "6cd656a32ea6e00df285915ecaa35f240a9975206d03767b96fd63ffb673eb80",
+    "rows": 240,
+    "retained": 240,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__cifar10_rgb_hwc": {
+    "file": "data/paq8px_standard/bench__cifar10_rgb_hwc.npz",
+    "sha256": "12c8962457b5dd39f02c8b9f34a11145b76aa6b98e71ccb06a53425880566c27",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__cifar10_rgb_planar": {
+    "file": "data/paq8px_standard/bench__cifar10_rgb_planar.npz",
+    "sha256": "96782a863af39de55ba5de0e72911c30dc659d43cccc627de155061ee2eb9366",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__dclm": {
+    "file": "data/paq8px_standard/bench__dclm.npz",
+    "sha256": "1f0d632db017878e27998653cd08f5454ecb092f5d54cc522572d7d92a004b0c",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__dclm_ranked": {
+    "file": "data/paq8px_standard/bench__dclm_ranked.npz",
+    "sha256": "8edf098c1b9415c24fc9a1a1db9ebaba5d66488f4a7d2c65b451234437b8fc77",
+    "rows": 250,
+    "retained": 250,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__dna": {
+    "file": "data/paq8px_standard/bench__dna.npz",
+    "sha256": "9b55b153be4d1d82d678a1751992ab54acd197d2e4d606ab0eed2038eefc3f9f",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__esc50_pcm8": {
+    "file": "data/paq8px_standard/bench__esc50_pcm8.npz",
+    "sha256": "b0b20d6b34edb3ea37324014fec22ed884a2b04105ef0b769e138d0ec07a5289",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__esc50_pcm8_11khz": {
+    "file": "data/paq8px_standard/bench__esc50_pcm8_11khz.npz",
+    "sha256": "caef88768c1a08c21e73d88e9504d774adba353e15e5b54dc2ca1780bcbd8430",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__kolmogorov_dna": {
+    "file": "data/paq8px_standard/bench__kolmogorov_dna.npz",
+    "sha256": "6d4d7e16ceed9197b5d22fcb5e57b1d62d6f7046e5ba1619bc40e51da0d5148b",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__kolmogorov_text": {
+    "file": "data/paq8px_standard/bench__kolmogorov_text.npz",
+    "sha256": "08a4f43afce6080795dcd08e5cd96d1e73b94a598efa7c51d14a482a0c6e4624",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__llm_compression_arxiv_math": {
+    "file": "data/paq8px_standard/bench__llm_compression_arxiv_math.npz",
+    "sha256": "32e919922723a7d249889708b9334d671b7eacaa8d6b442a22e48bd7dffb264c",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__llm_compression_cc": {
+    "file": "data/paq8px_standard/bench__llm_compression_cc.npz",
+    "sha256": "ed58494c68c20b424f7a19f00c7101c6918400ff2a72ef636aa47e6e2e10d2d8",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__llm_compression_python": {
+    "file": "data/paq8px_standard/bench__llm_compression_python.npz",
+    "sha256": "f4e55f21c35d2b76849a68c402f82e188de82e3b38a652d6b8729045bc2a43b7",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__metamath": {
+    "file": "data/paq8px_standard/bench__metamath.npz",
+    "sha256": "e69938629ab8f755127ea43ee275f78521712cb98d8834bed2c1dc2c3be3cb8f",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__musicnet_pcm8": {
+    "file": "data/paq8px_standard/bench__musicnet_pcm8.npz",
+    "sha256": "0f34e0dcf51a86bd0bec99f067b6bed9c7a31468d8dbb2bc86f69efa71899c48",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__musicnet_pcm8_11khz": {
+    "file": "data/paq8px_standard/bench__musicnet_pcm8_11khz.npz",
+    "sha256": "53b8cfdc4f0a309fe032511602cc6aaee4728b6eb5515df168c8c626d583f938",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__mutopia_melody_16th": {
+    "file": "data/paq8px_standard/bench__mutopia_melody_16th.npz",
+    "sha256": "0aad6c5cc1db0a512bad0ea5ebcdfcc9b9e6b39e34f07b72801be42a15d3db38",
+    "rows": 17,
+    "retained": 17,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__speech_commands_pcm8": {
+    "file": "data/paq8px_standard/bench__speech_commands_pcm8.npz",
+    "sha256": "6fef581e15ccc7cd5a7d03752436226ea7c7e47c443357602047f0a92345fd86",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "bench__speech_commands_pcm8_8khz": {
+    "file": "data/paq8px_standard/bench__speech_commands_pcm8_8khz.npz",
+    "sha256": "ed13a65a6a98726aaed412f24b598a183a1868bddc7417e19c2141480f5937bc",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__dewiki": {
+    "file": "data/paq8px_standard/new__dewiki.npz",
+    "sha256": "b3b11a8cf8223c14349a9403e07dc57838ed9196b10b3d88aa1a5be4858852ba",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__elf_x86_64": {
+    "file": "data/paq8px_standard/new__elf_x86_64.npz",
+    "sha256": "ce89589e33c3a7c2ba277db0a509c3cbca6090fe7f8827eec36a65f71153a965",
+    "rows": 256,
+    "retained": 170,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__fashion_mnist": {
+    "file": "data/paq8px_standard/new__fashion_mnist.npz",
+    "sha256": "e8be06e13a32f07954b56e3fdba39fc6a0fcb097e895f8728fdfbd9c11abe8eb",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__go_source": {
+    "file": "data/paq8px_standard/new__go_source.npz",
+    "sha256": "aaab21c587ef97d396c4ec05501b150cd70ccbf39d9d1aa0913789cd5abab396",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__hewiki": {
+    "file": "data/paq8px_standard/new__hewiki.npz",
+    "sha256": "7791d8ea51c33f8a79aaa8e26ae7713f2395877fe5e8e474e0691b9acb3768d6",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__python_docs_html": {
+    "file": "data/paq8px_standard/new__python_docs_html.npz",
+    "sha256": "a1efb504e92d5d383cea4d57e736b095d576d062825ea127d11d4b5a6e86b85f",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__uci_adult": {
+    "file": "data/paq8px_standard/new__uci_adult.npz",
+    "sha256": "0072ac8d9e39240762502f719fb94cde2cc1f6850e0a8bffb9070d2a03eb45cc",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__yesno_pcm16": {
+    "file": "data/paq8px_standard/new__yesno_pcm16.npz",
+    "sha256": "ac65bafbf40674911b89228d271e020e7c3d17359b2ecf5b782e0903d5be3c76",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__fsdd_audio": {
+    "file": "data/paq8px_standard/new__fsdd_audio.npz",
+    "sha256": "716eb7dbccb5e59b80f55543511f292a3f0fcc63751ba640face274de92262b9",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__gutenberg_en": {
+    "file": "data/paq8px_standard/new__gutenberg_en.npz",
+    "sha256": "420ea318e3b2d9700a5fa9f201a9caafa119f7c055e6f64f860a0746dffad8f4",
+    "rows": 256,
+    "retained": 2,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__js_lodash": {
+    "file": "data/paq8px_standard/new__js_lodash.npz",
+    "sha256": "041c873848f2e48cb549aa2e09c50fdf04222ea2a1d102aceca55abff609540b",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__json_countries": {
+    "file": "data/paq8px_standard/new__json_countries.npz",
+    "sha256": "e234b77720f3217c21e7afc4f020529b324a850a48d6451fa021cdf545913c6b",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__kmnist_images": {
+    "file": "data/paq8px_standard/new__kmnist_images.npz",
+    "sha256": "234f7719aa18ebcbb3035a3e764c4cd442d58896854f8815b5b424a7f66f1c39",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   },
+   "new__rust_ripgrep": {
+    "file": "data/paq8px_standard/new__rust_ripgrep.npz",
+    "sha256": "8c58837ced2f54051a6ebc9db4c921b124bd3e1b3b874ff16766b07423ff3abb",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b"
+   }
+  },
+  "paq8px_forced": {
+   "new__fsdd_audio": {
+    "file": "data/paq8px_forced/new__fsdd_audio.npz",
+    "sha256": "716eb7dbccb5e59b80f55543511f292a3f0fcc63751ba640face274de92262b9",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b",
+    "flags": [
+     "[\"-forcebinary\"]"
+    ]
+   },
+   "new__gutenberg_en": {
+    "file": "data/paq8px_forced/new__gutenberg_en.npz",
+    "sha256": "20cf7fe6fd60d97a56a71e88c37846127c314fe568f7f173fbcbef84eb455d7f",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b",
+    "flags": [
+     "[\"-forcetext\"]"
+    ]
+   },
+   "new__js_lodash": {
+    "file": "data/paq8px_forced/new__js_lodash.npz",
+    "sha256": "041c873848f2e48cb549aa2e09c50fdf04222ea2a1d102aceca55abff609540b",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b",
+    "flags": [
+     "[\"-forcetext\"]"
+    ]
+   },
+   "new__json_countries": {
+    "file": "data/paq8px_forced/new__json_countries.npz",
+    "sha256": "e234b77720f3217c21e7afc4f020529b324a850a48d6451fa021cdf545913c6b",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b",
+    "flags": [
+     "[\"-forcetext\"]"
+    ]
+   },
+   "new__kmnist_images": {
+    "file": "data/paq8px_forced/new__kmnist_images.npz",
+    "sha256": "234f7719aa18ebcbb3035a3e764c4cd442d58896854f8815b5b424a7f66f1c39",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b",
+    "flags": [
+     "[\"-forcebinary\"]"
+    ]
+   },
+   "new__rust_ripgrep": {
+    "file": "data/paq8px_forced/new__rust_ripgrep.npz",
+    "sha256": "8c58837ced2f54051a6ebc9db4c921b124bd3e1b3b874ff16766b07423ff3abb",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "c84f576fc2c522194cd320743708652a154daf6b",
+    "flags": [
+     "[\"-forcetext\"]"
+    ]
+   }
+  },
+  "lpaq1": {
+   "bench__aitdcc_a_protein": {
+    "file": "data/lpaq1/bench__aitdcc_a_protein.npz",
+    "sha256": "50f2f347d4a8013cf66d3bbf67baed90e18db885857e56fec04e575d32262237",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__aitdcc_b_c_source": {
+    "file": "data/lpaq1/bench__aitdcc_b_c_source.npz",
+    "sha256": "92ac05449422ac6a6b8b35d8f640f854ad0d7660f725208fc368ff4c0592832e",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__aitdcc_d_glibc_rand": {
+    "file": "data/lpaq1/bench__aitdcc_d_glibc_rand.npz",
+    "sha256": "6c87ee4694322abfb52b3d14d1e3cd4b70897b33ade77e46cf4b132ab380df4a",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__aitdcc_e_atlas_float32": {
+    "file": "data/lpaq1/bench__aitdcc_e_atlas_float32.npz",
+    "sha256": "9316f26f7089ab0f663342b3956823a04ff8e0ff2c88e3db062c9909095ecadb",
+    "rows": 247,
+    "retained": 247,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__aitdcc_g_astronomy": {
+    "file": "data/lpaq1/bench__aitdcc_g_astronomy.npz",
+    "sha256": "c6031c2f19d5f82be643ede0afab4f39f8ab6cb55f97b69d8f629cf1074a96b1",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__arithmetic": {
+    "file": "data/lpaq1/bench__arithmetic.npz",
+    "sha256": "1e6d783a5dc961eac789bd36e55dda911a8f17ed7b78c13df77c6c5d665d2e02",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__audio_16bit": {
+    "file": "data/lpaq1/bench__audio_16bit.npz",
+    "sha256": "ac22db24f8a4d51e84c2998561f0cb5f7914bcbf1a80b3e9123cad5e57ebcf5c",
+    "rows": 244,
+    "retained": 244,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__audio_8bit": {
+    "file": "data/lpaq1/bench__audio_8bit.npz",
+    "sha256": "6b7a8611f117f872e96868dc233a0a59d17b55b30869f615dd765113de6eb958",
+    "rows": 240,
+    "retained": 240,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__cifar10_rgb_hwc": {
+    "file": "data/lpaq1/bench__cifar10_rgb_hwc.npz",
+    "sha256": "58a5b07189628c0204ed6021b2f74ec6767f89d882fe92ddd8a2fda8858b10b6",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__cifar10_rgb_planar": {
+    "file": "data/lpaq1/bench__cifar10_rgb_planar.npz",
+    "sha256": "536e185e936e416027a2d0e8f71214de795d0b0911fb8f2669cbbe9f8f9063bf",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__dclm": {
+    "file": "data/lpaq1/bench__dclm.npz",
+    "sha256": "5056dceb94d0c30482898c9143b47a47352739be5e1ae29ce9c9f00fb659ebec",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__dclm_ranked": {
+    "file": "data/lpaq1/bench__dclm_ranked.npz",
+    "sha256": "3f67c49adab1a2a11d6012aac507bdc0a30586825a60d68f029db3475328ad52",
+    "rows": 250,
+    "retained": 250,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__dna": {
+    "file": "data/lpaq1/bench__dna.npz",
+    "sha256": "cf99a5c7fb7b9a9245e26d5fa7bf713c72e1a9789c340028dd0ca27d36f4d7c4",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__esc50_pcm8_11khz": {
+    "file": "data/lpaq1/bench__esc50_pcm8_11khz.npz",
+    "sha256": "c0fa289eef44bb7e758a314e8b6a40ee471753f22b44592d452dee315569e542",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__esc50_pcm8": {
+    "file": "data/lpaq1/bench__esc50_pcm8.npz",
+    "sha256": "129649c8ac0144e2a328f66e579c17d2c174b78935cfff0d3a98182d2f892e6b",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__kolmogorov_dna": {
+    "file": "data/lpaq1/bench__kolmogorov_dna.npz",
+    "sha256": "1ac608c3932ed3b03576367e6d8a648d8bfba7f8a9b77f2ae58d50c7233ee810",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__kolmogorov_text": {
+    "file": "data/lpaq1/bench__kolmogorov_text.npz",
+    "sha256": "f1290cb42f8b588716342bc8df6728b21a3fdea9c2ff22641c9c5a06887fc387",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__llm_compression_arxiv_math": {
+    "file": "data/lpaq1/bench__llm_compression_arxiv_math.npz",
+    "sha256": "2bc3cedffd04f807a841c2ee827c377fd10c9d03d43f6f13d404e5f86b977c3f",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__llm_compression_cc": {
+    "file": "data/lpaq1/bench__llm_compression_cc.npz",
+    "sha256": "444d968cef168f0a2f121b44257c379eefd29cc5c9bbc9822a1476c994f3f400",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__llm_compression_python": {
+    "file": "data/lpaq1/bench__llm_compression_python.npz",
+    "sha256": "eb1e55a69df9576eb19b419f8e29747fc791e4039a696b4167a29b8220e73d76",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__metamath": {
+    "file": "data/lpaq1/bench__metamath.npz",
+    "sha256": "cc64954672a2b4fe07c934973c500203f232177d9cac4dbee77bc0cb00477333",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__musicnet_pcm8_11khz": {
+    "file": "data/lpaq1/bench__musicnet_pcm8_11khz.npz",
+    "sha256": "4620f62ed359922ae5bf6799e5b2927a3df99c9f4f07ed7c943e6914ffb36111",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__musicnet_pcm8": {
+    "file": "data/lpaq1/bench__musicnet_pcm8.npz",
+    "sha256": "08dea2aae1574e22bf1dad956bf1737ac13f456a544d2ba67206af46603e18d6",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__mutopia_melody_16th": {
+    "file": "data/lpaq1/bench__mutopia_melody_16th.npz",
+    "sha256": "6e51237775c030a982f3cae15943917e9c8c7c2d5687372f3640f9f1cfa6b424",
+    "rows": 17,
+    "retained": 17,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__speech_commands_pcm8_8khz": {
+    "file": "data/lpaq1/bench__speech_commands_pcm8_8khz.npz",
+    "sha256": "c505af22c66669ffec8fd8503c96a2845f5bf782c85f21d5b91685fe06d0c3f6",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "bench__speech_commands_pcm8": {
+    "file": "data/lpaq1/bench__speech_commands_pcm8.npz",
+    "sha256": "df946b68bd6b4309897693eae433c562e8b261489d3905e88bf741fb73e89730",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "new__dewiki": {
+    "file": "data/lpaq1/new__dewiki.npz",
+    "sha256": "db3db95c8b4409261e375d88b64fec3685a04e11ab68193ab7511ac64cce3c63",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "new__elf_x86_64": {
+    "file": "data/lpaq1/new__elf_x86_64.npz",
+    "sha256": "0ba19aebac134a2a464fd176de2add2fb71df332bda18de6313f219f083108e8",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "new__fashion_mnist": {
+    "file": "data/lpaq1/new__fashion_mnist.npz",
+    "sha256": "46fe57db8b5ff0c0f22206500620554da26aeb990aa796658d54ea765fa483ff",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "new__go_source": {
+    "file": "data/lpaq1/new__go_source.npz",
+    "sha256": "fe07943d859ce9cdd2e1fd2d19b5649f16f9b85ca710454d69c45b29d1f39f56",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "new__hewiki": {
+    "file": "data/lpaq1/new__hewiki.npz",
+    "sha256": "2e7781fe95c2bdd42ce7620a052dce60ad90cb2474aeefac41fe93b6fe761577",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "new__python_docs_html": {
+    "file": "data/lpaq1/new__python_docs_html.npz",
+    "sha256": "ac36c54531fbcad0e5190dbadfb0498a196f99178c7dd27d37580b86db5a76ea",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "new__uci_adult": {
+    "file": "data/lpaq1/new__uci_adult.npz",
+    "sha256": "eac8aca5a8b9e0481c9ff06ef4a3cf36c1539d47f14c9789e7fa7e86925d0dbb",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   },
+   "new__yesno_pcm16": {
+    "file": "data/lpaq1/new__yesno_pcm16.npz",
+    "sha256": "e80c77c6a5604f701d1a2c38088904b785fedb8fc1895b9a1c490eb9aea9dffb",
+    "rows": 256,
+    "retained": 256,
+    "compressor_commit": "lpaq1 (Mahoney 2007), logging build",
+    "archive_bytes": "unavailable (-1): only per-byte log losses were logged",
+    "level": 4,
+    "mask": 127
+   }
+  }
+ },
+ "reference_models": {
+  "bench__metamath": {
+   "file": "reference_models/evaluated_ensemble__bench__metamath.npy",
+   "sha256": "4e84d75139ec0c6be8a57f42935896b3b8a0120f3c4dd1145d75dd31c81fd085",
+   "model": "released self-play learners, 24M, round 1024, 8-seed probability average",
+   "seeds": [
+    "seed-40354564",
+    "seed-40354565",
+    "seed-40354566",
+    "seed-40354567",
+    "seed-40354568",
+    "seed-40354569",
+    "seed-40354570",
+    "seed-40354571"
+   ]
+  },
+  "bench__aitdcc_b_c_source": {
+   "file": "reference_models/evaluated_ensemble__bench__aitdcc_b_c_source.npy",
+   "sha256": "69d802aae78199dce43107bece43d869bdfb0988affad8494276dc35058aeacf",
+   "model": "released self-play learners, 24M, round 768, 8-seed probability average",
+   "seeds": [
+    "seed-40354564",
+    "seed-40354565",
+    "seed-40354566",
+    "seed-40354567",
+    "seed-40354568",
+    "seed-40354569",
+    "seed-40354570",
+    "seed-40354571"
+   ]
+  },
+  "bench__llm_compression_python": {
+   "file": "reference_models/evaluated_ensemble__bench__llm_compression_python.npy",
+   "sha256": "6ccf9ad678a07f75e1cfef462ce4458fe011f49c0f832c1b6e6f338c73718cb8",
+   "model": "released self-play learners, 24M, round 768, 8-seed probability average",
+   "seeds": [
+    "seed-40354564",
+    "seed-40354565",
+    "seed-40354566",
+    "seed-40354567",
+    "seed-40354568",
+    "seed-40354569",
+    "seed-40354570",
+    "seed-40354571"
+   ]
+  },
+  "bench__llm_compression_arxiv_math": {
+   "file": "reference_models/evaluated_ensemble__bench__llm_compression_arxiv_math.npy",
+   "sha256": "696f9a6fcbba76fd8c6b3f6a7c8226b48d270f0d87c97de0a2d22f0ac791129a",
+   "model": "released self-play learners, 24M, round 768, 8-seed probability average",
+   "seeds": [
+    "seed-40354564",
+    "seed-40354565",
+    "seed-40354566",
+    "seed-40354567",
+    "seed-40354568",
+    "seed-40354569",
+    "seed-40354570",
+    "seed-40354571"
+   ]
+  },
+  "bench__dclm": {
+   "file": "reference_models/evaluated_ensemble__bench__dclm.npy",
+   "sha256": "afaab541621b8c916b78a40ed214f373ab4a270a5fb07c037607949d47bc16c9",
+   "model": "released self-play learners, 24M, round 768, 8-seed probability average",
+   "seeds": [
+    "seed-40354564",
+    "seed-40354565",
+    "seed-40354566",
+    "seed-40354567",
+    "seed-40354568",
+    "seed-40354569",
+    "seed-40354570",
+    "seed-40354571"
+   ]
+  },
+  "bench__llm_compression_cc": {
+   "file": "reference_models/evaluated_ensemble__bench__llm_compression_cc.npy",
+   "sha256": "4ca6beb0a09a6307cd2e0ac4514cbab2115f0e06968186a87e8d333ad39a9756",
+   "model": "released self-play learners, 24M, round 768, 8-seed probability average",
+   "seeds": [
+    "seed-40354564",
+    "seed-40354565",
+    "seed-40354566",
+    "seed-40354567",
+    "seed-40354568",
+    "seed-40354569",
+    "seed-40354570",
+    "seed-40354571"
+   ]
+  },
+  "bench__kolmogorov_text": {
+   "file": "reference_models/evaluated_ensemble__bench__kolmogorov_text.npy",
+   "sha256": "a0fa9e3695c81ff0e138a567df740db979386384fec852bf5479d135fe70258b",
+   "model": "released self-play learners, 24M, round 768, 8-seed probability average",
+   "seeds": [
+    "seed-40354564",
+    "seed-40354565",
+    "seed-40354566",
+    "seed-40354567",
+    "seed-40354568",
+    "seed-40354569",
+    "seed-40354570",
+    "seed-40354571"
+   ]
+  },
+  "bench__dclm_ranked": {
+   "file": "reference_models/evaluated_ensemble__bench__dclm_ranked.npy",
+   "sha256": "093319a1be4268d630891bafde49de7177f59502871f17aefa1d57fc45224e7c",
+   "model": "released self-play learners, 24M, round 768, 8-seed probability average",
+   "seeds": [
+    "seed-40354564",
+    "seed-40354565",
+    "seed-40354566",
+    "seed-40354567",
+    "seed-40354568",
+    "seed-40354569",
+    "seed-40354570",
+    "seed-40354571"
+   ]
+  }
+ }
+}

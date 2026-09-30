@@ -1,0 +1,524 @@
+[
+ {
+  "battery": 75,
+  "release_path": "protocols/PROTOCOL_B75_frontier_rescore.md",
+  "sha256": "7f73b4cef5e85a0482356b7d2ee2874df010c1f105e6709a0bbf7054d2ad555e",
+  "first_full_hash_message": {
+   "id": "C094",
+   "utc": "2026-09-29 07:18:44",
+   "sender": "Claude -> Codex",
+   "line": 3383
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 76,
+  "release_path": "protocols/PROTOCOL_B76_structured.md",
+  "sha256": "d6c9e4b749f8f383aee510d23a64324e876414835bd7dc4f9d808bb1eb248fc6",
+  "first_full_hash_message": {
+   "id": "C102",
+   "utc": "2026-09-29 08:58:32",
+   "sender": "Claude -> Codex",
+   "line": 3529
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 77,
+  "release_path": "protocols/PROTOCOL_B77_auto_geometry.md",
+  "sha256": "c18c78dc72260a0504c70f113af644b3af559739d38f6ca12a1233ce0e2c0cc2",
+  "first_full_hash_message": {
+   "id": "C104",
+   "utc": "2026-09-29 09:05:46",
+   "sender": "Claude -> Codex",
+   "line": 3569
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 78,
+  "release_path": "protocols/PROTOCOL_B78_librispeech.md",
+  "sha256": "f5707b998008740a802ae6a201b5ab097dd8dbda7ee42b0f8c70837cb56d0c8c",
+  "first_full_hash_message": {
+   "id": "C109",
+   "utc": "2026-09-29 09:17:10",
+   "sender": "Claude -> Codex",
+   "line": 3637
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 79,
+  "release_path": "protocols/PROTOCOL_B79_llm_bits.md",
+  "sha256": "812670e1d3254ae766293dc0034a8076348a690dcc247a7e5c53eca83a65d68c",
+  "first_full_hash_message": {
+   "id": "C115",
+   "utc": "2026-09-29 09:30:36",
+   "sender": "Claude -> Codex",
+   "line": 3709
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 80,
+  "release_path": "protocols/PROTOCOL_B80_advantage_map.md",
+  "sha256": "95849665f72d586142a5d98cbf36500953b496adeb84e426aad91bf9a6061faf",
+  "first_full_hash_message": {
+   "id": "C118",
+   "utc": "2026-09-29 09:42:41",
+   "sender": "Claude -> Codex",
+   "line": 3764
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 81,
+  "release_path": "protocols/PROTOCOL_B81_context.md",
+  "sha256": "aac6e353b28782cc24d64d930bd452a966325f0effc141f6a7ea328a1ab4380e",
+  "first_full_hash_message": {
+   "id": "C121",
+   "utc": "2026-09-29 09:53:06",
+   "sender": "Claude -> Codex",
+   "line": 3802
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 82,
+  "release_path": "protocols/PROTOCOL_B82_learner_positions.md",
+  "sha256": "0d86db3e5e2089e8d1591b8024970bae0b475a63b0d3e5b25ea2e9e13b87c463",
+  "first_full_hash_message": {
+   "id": "C121",
+   "utc": "2026-09-29 09:53:06",
+   "sender": "Claude -> Codex",
+   "line": 3802
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 83,
+  "release_path": "protocols/PROTOCOL_B83_decompose_lead.md",
+  "sha256": "049b29e8edd97c25abdb994a9f9040f630b1bcbc88d10470fde44f333f46ebac",
+  "first_full_hash_message": {
+   "id": "C125",
+   "utc": "2026-09-29 10:04:51",
+   "sender": "Claude -> Codex",
+   "line": 3870
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 84,
+  "release_path": "protocols/PROTOCOL_B84_match_model.md",
+  "sha256": "6069bf64640c499e8adfa52d4c679af85141cb535871fb8d20debf6409c3279a",
+  "first_full_hash_message": {
+   "id": "C127",
+   "utc": "2026-09-29 10:16:29",
+   "sender": "Claude -> Codex",
+   "line": 3914
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 85,
+  "release_path": "protocols/PROTOCOL_B85_word_model.md",
+  "sha256": "0c4f085f661a38602ecf665b5bc3c61d5c28417d0306e5ac26b4e1d99a793b3a",
+  "first_full_hash_message": {
+   "id": "C129",
+   "utc": "2026-09-29 10:26:43",
+   "sender": "Claude -> Codex",
+   "line": 3952
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 86,
+  "release_path": "protocols/PROTOCOL_B86_combination.md",
+  "sha256": "ba3d035ca5e498a684050cea0733e1cb2a3ee41b24a003eb9583a47892fe4b7f",
+  "first_full_hash_message": {
+   "id": "C129",
+   "utc": "2026-09-29 10:26:43",
+   "sender": "Claude -> Codex",
+   "line": 3952
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 87,
+  "release_path": "protocols/PROTOCOL_B87_heldout_sources.md",
+  "sha256": "25e55cf48d53c620f85b65724578f481ef1fb18e9cbaa9825cf4848db33566af",
+  "first_full_hash_message": {
+   "id": "C131",
+   "utc": "2026-09-29 10:38:04",
+   "sender": "Claude -> Codex",
+   "line": 4006
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 88,
+  "release_path": "protocols/PROTOCOL_B88_strong_compressor.md",
+  "sha256": "83bf3bbb0e68c72084ed52d09b622216749d637cd95f206126ab3f1dea629322",
+  "first_full_hash_message": {
+   "id": "C133",
+   "utc": "2026-09-29 11:04:27",
+   "sender": "Claude -> Codex",
+   "line": 4092
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 89,
+  "release_path": "protocols/PROTOCOL_B89_paq_librispeech.md",
+  "sha256": "cdf764bde0c78de29a8f270859a16f924bd6c5e737c0868a9c851a7d63eddadf",
+  "first_full_hash_message": {
+   "id": "C135",
+   "utc": "2026-09-29 11:16:41",
+   "sender": "Claude -> Codex",
+   "line": 4130
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 90,
+  "release_path": "protocols/PROTOCOL_B90_timing.md",
+  "sha256": "a88c0e58a134babe00b5565602c5ef2ae5e30112538546a72673820b8cf956d4",
+  "first_full_hash_message": {
+   "id": "C144",
+   "utc": "2026-09-29 12:08:48",
+   "sender": "Claude -> Codex",
+   "line": 4335
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 91,
+  "release_path": "protocols/PROTOCOL_B91_scaling_gap.md",
+  "sha256": "bbe8d6dbb11a663a3f396a582d9be8d796a4fa96e57e3c00d1478fff0dff94b9",
+  "first_full_hash_message": {
+   "id": "C146",
+   "utc": "2026-09-29 12:23:03",
+   "sender": "Claude -> Codex",
+   "line": 4393
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 92,
+  "release_path": "protocols/PROTOCOL_B92_enwik9.md",
+  "sha256": "0a558b59a2f8824163035e41c67a036a3a2d9b24927007791ac4f3f76e42c950",
+  "first_full_hash_message": {
+   "id": "C147",
+   "utc": "2026-09-29 12:24:44",
+   "sender": "Claude -> Codex",
+   "line": 4419
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 93,
+  "release_path": "protocols/PROTOCOL_B93_scale_complementarity.md",
+  "sha256": "4cdd875a06e93eceb17d9ff5d183094ab862f17e40ad4888767a936add0964cb",
+  "first_full_hash_message": {
+   "id": "C152",
+   "utc": "2026-09-29 13:28:32",
+   "sender": "Claude -> Codex",
+   "line": 4566
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 94,
+  "release_path": "protocols/PROTOCOL_B94_what_grows_the_signal.md",
+  "sha256": "bf3261a1787a0f4fc221928f76f35f22a3568be4a4a93f2b55968809c53f1b0e",
+  "first_full_hash_message": {
+   "id": "C154",
+   "utc": "2026-09-29 13:33:27",
+   "sender": "Claude -> Codex",
+   "line": 4597
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 95,
+  "release_path": "protocols/PROTOCOL_B95_calibration_vs_knowledge.md",
+  "sha256": "67265fa68d48c727109508548ba0ab5629da4490f17b07787729cef177c0f80c",
+  "first_full_hash_message": {
+   "id": "C156",
+   "utc": "2026-09-29 13:38:04",
+   "sender": "Claude -> Codex",
+   "line": 4614
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 96,
+  "release_path": "protocols/PROTOCOL_B96_sharpen_signal.md",
+  "sha256": "e33c43caf46cdfff638c4efd851d127c22fbe26adf424569b3705eabd0ada64c",
+  "first_full_hash_message": {
+   "id": "C159",
+   "utc": "2026-09-29 13:45:56",
+   "sender": "Claude -> Codex",
+   "line": 4662
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 97,
+  "release_path": "protocols/PROTOCOL_B97_size_seed_temperature_grid.md",
+  "sha256": "aff77ab4098368cd8877f56bca513721097043e432b72dfc1b257a4b8bacb437",
+  "first_full_hash_message": {
+   "id": "C159",
+   "utc": "2026-09-29 13:45:56",
+   "sender": "Claude -> Codex",
+   "line": 4662
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 98,
+  "release_path": "protocols/PROTOCOL_B98_paq_per_byte.md",
+  "sha256": "487dd86c0db8b7bcdedd134ad430d1d93e0286a39c970e62328addfbc575814d",
+  "first_full_hash_message": {
+   "id": "C164",
+   "utc": "2026-09-29 14:01:02",
+   "sender": "Claude -> Codex",
+   "line": 4759
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 99,
+  "release_path": "protocols/PROTOCOL_B99_natural_data_yardstick.md",
+  "sha256": "0810fce3b2d9031d8e3584b99be7969d9603b4d2767686f7963a9eb50011566c",
+  "first_full_hash_message": {
+   "id": "C164",
+   "utc": "2026-09-29 14:01:02",
+   "sender": "Claude -> Codex",
+   "line": 4759
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 100,
+  "release_path": "protocols/PROTOCOL_B100_low_overhead_combiners.md",
+  "sha256": "4296842653ab5464b251bfb2c2586755acb8f48a93ed762810acbda368699711",
+  "first_full_hash_message": {
+   "id": "C169",
+   "utc": "2026-09-29 14:14:53",
+   "sender": "Claude -> Codex",
+   "line": 4829
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 101,
+  "release_path": "protocols/PROTOCOL_B101_gain_beyond_paq_by_size.md",
+  "sha256": "0221ec2fe7ac939848168b0ecd2a428a1a7fe5fbbcb15ec85d494bb690c46bef",
+  "first_full_hash_message": {
+   "id": "C172",
+   "utc": "2026-09-29 14:21:46",
+   "sender": "Claude -> Codex",
+   "line": 4876
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 102,
+  "release_path": "protocols/PROTOCOL_B102_compute_axis_and_fixed_prior.md",
+  "sha256": "64c46f385a97a56c86522f9c9e67f4bd0a9dcd7360b3d58ea5985e3229ae590f",
+  "first_full_hash_message": {
+   "id": "C174",
+   "utc": "2026-09-29 14:29:30",
+   "sender": "Claude -> Codex",
+   "line": 4936
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 103,
+  "release_path": "protocols/PROTOCOL_B103_in_domain.md",
+  "sha256": "259b2d0838c258ab132764ae952f06dca8812e36811d32fe9ad3caac14d64114",
+  "first_full_hash_message": {
+   "id": "C175",
+   "utc": "2026-09-29 14:35:24",
+   "sender": "Claude -> Codex",
+   "line": 4953
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 104,
+  "release_path": "protocols/PROTOCOL_B104_peeling_ladder.md",
+  "sha256": "1aa4fa028c90c79a2d3b58ae5612a7d510d1e4ddec2b5f90138a4a70a25e7ed6",
+  "first_full_hash_message": {
+   "id": "C180",
+   "utc": "2026-09-29 14:58:29",
+   "sender": "Claude -> Codex",
+   "line": 5075
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 105,
+  "release_path": "protocols/PROTOCOL_B105_oracle_mixture.md",
+  "sha256": "b7ec39bbee6f01fc5b796c73c1b2e24c0cca21394359b78868301679a103f75f",
+  "first_full_hash_message": {
+   "id": "C181",
+   "utc": "2026-09-29 15:00:48",
+   "sender": "Claude -> Codex",
+   "line": 5093
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 106,
+  "release_path": "protocols/PROTOCOL_B106_prospective_sources.md",
+  "sha256": "0ab49e7bf2fa4c0d6ecc4ed8626476b3ec30a5a96891915048a2c70c5193a770",
+  "first_full_hash_message": {
+   "id": "C184",
+   "utc": "2026-09-29 15:05:28",
+   "sender": "Claude -> Codex",
+   "line": 5142
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 107,
+  "release_path": "protocols/PROTOCOL_B107_where_image_gain_lives.md",
+  "sha256": "32b17ae30e97077c10b7701abe11bb5d09d33ecf404345820d22db4d7e17734c",
+  "first_full_hash_message": {
+   "id": "C190",
+   "utc": "2026-09-29 15:30:55",
+   "sender": "Claude -> Codex",
+   "line": 5246
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 108,
+  "release_path": "protocols/PROTOCOL_B108_hedging_vs_knowledge.md",
+  "sha256": "2c29fe7efb0997f5d96246f3a274ba51222b6a7e135cd1be4053b229b6dd0517",
+  "first_full_hash_message": {
+   "id": "C192",
+   "utc": "2026-09-29 15:33:28",
+   "sender": "Claude -> Codex",
+   "line": 5282
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 109,
+  "release_path": "protocols/PROTOCOL_B109_is_the_image_residual_special.md",
+  "sha256": "2134f8405b3a208b28e8a2f8344c92728bf06b1ca0ef5cb31be6237f7cbbd5ca",
+  "first_full_hash_message": {
+   "id": "C194",
+   "utc": "2026-09-29 15:38:45",
+   "sender": "Claude -> Codex",
+   "line": 5307
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 110,
+  "release_path": "protocols/PROTOCOL_B110_curriculum_beyond_paq.md",
+  "sha256": "db4a8b673198a549a5b3ebe759abdf88d9a0b16356d065c995cb668bfc3d6f8a",
+  "first_full_hash_message": {
+   "id": "C215",
+   "utc": "2026-09-29 16:18:53",
+   "sender": "Claude -> Codex",
+   "line": 5555
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 111,
+  "release_path": "protocols/PROTOCOL_B111_reward_arms_beyond_paq.md",
+  "sha256": "4e75f1432548803c862ed9fc3ec97e9629e2d59ad9e6433204ac1b3f9e5d01bf",
+  "first_full_hash_message": {
+   "id": "C215",
+   "utc": "2026-09-29 16:18:53",
+   "sender": "Claude -> Codex",
+   "line": 5555
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 112,
+  "release_path": "protocols/PROTOCOL_B112_calibrated_beyond_paq.md",
+  "sha256": "4bf3620944a58f3a39ce6968faaab2328f0b79bc8de2814a0ff7d0606478e17b",
+  "first_full_hash_message": {
+   "id": "C215",
+   "utc": "2026-09-29 16:18:53",
+   "sender": "Claude -> Codex",
+   "line": 5555
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 113,
+  "release_path": "protocols/PROTOCOL_B113_where_learners_add.md",
+  "sha256": "0cb606c990c804a0e9889ef5e369fc6b9c64b7f5cad4ebf5f613ff641188c81d",
+  "first_full_hash_message": {
+   "id": "C250",
+   "utc": "2026-09-29 18:19:35",
+   "sender": "Claude -> Codex",
+   "line": 6065
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 114,
+  "release_path": "protocols/PROTOCOL_B114_paq8px_ablation.md",
+  "sha256": "d0bc759d7f5abc737c905e9c33a4430adda7cff696b0431bfbda9b3a298358f2",
+  "first_full_hash_message": {
+   "id": "C250",
+   "utc": "2026-09-29 18:19:35",
+   "sender": "Claude -> Codex",
+   "line": 6065
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 115,
+  "release_path": "protocols/PROTOCOL_B115_basic_compressor.md",
+  "sha256": "5c002a5d22ec840e9944d9e019c355924418d4333dc87eda60d9f62ace33ea34",
+  "first_full_hash_message": {
+   "id": "C255",
+   "utc": "2026-09-29 18:45:19",
+   "sender": "Claude -> Codex",
+   "line": 6187
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 117,
+  "release_path": "protocols/PROTOCOL_B117_frozen_compressor_prospective.md",
+  "sha256": "b56fa8e2553948249271ab374e70b85671a977be73b5ab7b8aa60a54763c14a4",
+  "first_full_hash_message": {
+   "id": "C258",
+   "utc": "2026-09-29 18:58:33",
+   "sender": "Claude -> Codex",
+   "line": 6233
+  },
+  "timestamp_status": "Agent-written message timestamp; not external preregistration or proof of pre-score timing."
+ },
+ {
+  "battery": 114,
+  "release_path": "protocols/PROTOCOL_B114_amendment1.md",
+  "sha256": "206b8f73fc0b07a59a56bd724b830ab506f8889df4ed94a03ff5f71af1ea3891",
+  "kind": "amendment or correction file (separate from the frozen protocol)"
+ },
+ {
+  "battery": 115,
+  "release_path": "protocols/PROTOCOL_B115_corrections.md",
+  "sha256": "37281c31cd9847bd02a6a9184d55b513ff02d321604261651294bf0d82b59c6e",
+  "kind": "amendment or correction file (separate from the frozen protocol)"
+ },
+ {
+  "battery": 117,
+  "release_path": "protocols/PROTOCOL_B117_corrections.md",
+  "sha256": "4eb7a54c11609c0aabfe240c93d7f6d3d57ccd86667fdb42a75fb485a8c271bc",
+  "kind": "amendment or correction file (separate from the frozen protocol)"
+ }
+]
